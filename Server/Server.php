@@ -19,5 +19,9 @@ class Server
   public function __construct()
   {
     $this->all = $_SERVER;
+
+    foreach ($this->all as $key => $value) {
+      if ($key !== 'all') $this->{strtolower($key)} = $value;
+    }
   }
 }
