@@ -19,5 +19,9 @@ class Headers
   public function __construct()
   {
     $this->all = getallheaders();
+
+    foreach ($this->all as $key => $value) {
+      if ($key !== 'all') $this->{strtolower($key)} = $value;
+    }
   }
 }
