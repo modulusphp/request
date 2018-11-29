@@ -1,7 +1,7 @@
 {
   "name": "modulusphp/request",
   "description": "Request component for modulusPHP",
-  "version": "1.9.0",
+  "version": "1.9.0.1",
   "license": "MIT",
   "type": "package",
   "authors": [{
@@ -9,7 +9,7 @@
     "email": "donaldpakkies@gmail.com"
   }],
   "require": {
-    "modulusphp/security": "^1.9.1"
+    "modulusphp/security": "1.9.*"
   },
   "autoload": {
     "psr-4": {
