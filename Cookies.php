@@ -2,12 +2,15 @@
 
 namespace Modulus\Request;
 
+use Modulus\Support\Extendable;
 use Birke\Rememberme\Cookie\PHPCookie;
 use Modulus\Request\Cookies\Cookies as Base;
 use Modulus\Request\Cookies\CookiesInterface;
 
 class Cookies extends Base implements CookiesInterface
 {
+  use Extendable;
+
   /**
    * Check if cookie is present
    *
