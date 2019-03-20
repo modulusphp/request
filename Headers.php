@@ -2,11 +2,14 @@
 
 namespace Modulus\Request;
 
+use Modulus\Support\Extendable;
 use Modulus\Request\Headers\Headers as Base;
 use Modulus\Request\Headers\HeadersInterface;
 
 class Headers extends Base implements HeadersInterface
 {
+  use Extendable;
+
   /**
    * Check if header is present
    *

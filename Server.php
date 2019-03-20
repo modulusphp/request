@@ -2,11 +2,14 @@
 
 namespace Modulus\Request;
 
+use Modulus\Support\Extendable;
 use Modulus\Request\Server\Server as Base;
 use Modulus\Request\Server\ServerInterface;
 
 class Server extends Base implements ServerInterface
 {
+  use Extendable;
+
   /**
    * Check if server value is present
    *
